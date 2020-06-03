@@ -40,6 +40,7 @@ namespace ThanksCardClient.ViewModels
             this.User = new User();
             this.User.Name = "admin";
             this.User.Password = "admin";
+            this.User.PasswordChar = "●";
         }
 
         #region LogonCommand
