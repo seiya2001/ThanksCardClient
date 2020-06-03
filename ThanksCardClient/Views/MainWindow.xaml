@@ -7,7 +7,7 @@
     <Grid>
         <StackPanel>
             <StackPanel.Background>
-                <ImageBrush ImageSource="C:\Users\sakuma_reishin\Desktop\開発演習\ThanksCardClient\ThanksCardClient\KEs01j5WvpQneqi1590470761_1590470789.png"/>
+                <ImageBrush ImageSource="Background.png"/>
             </StackPanel.Background>
             <ContentControl prism:RegionManager.RegionName="HeaderRegion" />
             <Border Background="AliceBlue" Height="15"/>
