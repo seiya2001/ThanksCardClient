@@ -9,7 +9,7 @@
             <Button Content="感謝カード一覧" Command="{Binding ShowThanksCardListCommand}"/>
             <Button Content="社員管理画面" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
             <Button Content="部署管理画面" Command="{Binding ShowDepartmentMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
-            <Button Content="カテゴリ登録画面" Command="{Binding ShowTagMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
+            <Button Content="ユーザのマスタメンテ画面を開く" Command="{Binding ShowTagMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
             <Button Content="ログアウト" Command="{Binding LogoffCommand}"/>
         </StackPanel>
     </Grid>
