@@ -6,10 +6,17 @@
         Title="{Binding Title}" Height="500" Width="600">
     <Grid>
         <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="C:\Users\sakuma_reishin\Desktop\開発演習\ThanksCardClient\ThanksCardClient\KEs01j5WvpQneqi1590470761_1590470789.png"/>
+            </StackPanel.Background>
             <ContentControl prism:RegionManager.RegionName="HeaderRegion" />
             <Border Background="AliceBlue" Height="15"/>
             <ContentControl prism:RegionManager.RegionName="ContentRegion" />
             <Border Background="AliceBlue" Height="15"/>
+            <TextBlock Text="TomoyoseHotel&#xa;ThanksCard System"
+                       FontFamily="Georgia"
+                       FontSize="30"
+                       Margin="250,255,61.6,250"/>
             <ContentControl prism:RegionManager.RegionName="FooterRegion" />
         </StackPanel>
     </Grid>
