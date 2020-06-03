@@ -7,10 +7,10 @@
         <StackPanel>
             <Button Content="感謝カード作成" Command="{Binding ShowThanksCardCreateCommand}"/>
             <Button Content="感謝カード一覧" Command="{Binding ShowThanksCardListCommand}"/>
-            <Button Content="ユーザのマスタメンテ画面を開く" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
-            <Button Content="部署のマスタメンテ画面を開く" Command="{Binding ShowDepartmentMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
-            <Button Content="ユーザのマスタメンテ画面を開く" Command="{Binding ShowTagMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
-            <Button Content="ログオフ" Command="{Binding LogoffCommand}"/>
+            <Button Content="社員登録画面" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
+            <Button Content="部署登録画面" Command="{Binding ShowDepartmentMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
+            <Button Content="カテゴリ登録画面" Command="{Binding ShowTagMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
+            <Button Content="ログアウト" Command="{Binding LogoffCommand}"/>
         </StackPanel>
     </Grid>
 </UserControl>
