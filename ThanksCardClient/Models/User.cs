@@ -63,6 +63,8 @@ namespace ThanksCardClient.Models
             get { return _Department; }
             set { SetProperty(ref _Department, value); }
         }
+
+        public object PasswordChar { get; internal set; }
         #endregion
 
         public async Task<User> LogonAsync()

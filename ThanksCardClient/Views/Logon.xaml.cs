@@ -10,6 +10,9 @@ namespace ThanksCardClient.Views
         public Logon()
         {
             InitializeComponent();
+            
         }
+
     }
+
 }

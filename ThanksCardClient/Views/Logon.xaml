@@ -4,13 +4,13 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel>
-            <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Name:"/>
-            <TextBox Text="{Binding User.Name}"/>
-            <TextBlock Text="Password:"/>
-            <TextBox Text="{Binding User.Password}"/>
-            <Button Content="Logon" Command="{Binding LogonCommand}"/>
+        <StackPanel Margin="50,25,280,0">
+            <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" />
+            <TextBlock Text="Name:" Width="120"/>
+            <TextBox Text="{Binding User.Name}" Width="120"/>
+            <TextBlock Text="Password:" Width="120"/>
+            <TextBox Text="{Binding User.Password}" Width="120" />
+            <Button Content="Logon" Command="{Binding LogonCommand}" Width="120"/>
         </StackPanel>
     </Grid>
 </UserControl>
