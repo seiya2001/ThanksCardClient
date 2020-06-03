@@ -10,7 +10,7 @@
             <TextBox Text="{Binding User.Name}"/>
             <TextBlock Text="Password:"/>
             <TextBox Text="{Binding User.Password}"/>
-            <Button Content="Log" Command="{Binding LogonCommand}"/>
+            <Button Content="Logon" Command="{Binding LogonCommand}"/>
         </StackPanel>
     </Grid>
 </UserControl>
