@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Newtonsoft.Json;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using System;
@@ -32,6 +33,8 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        
+
         public LogonViewModel(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
@@ -40,7 +43,7 @@ namespace ThanksCardClient.ViewModels
             this.User = new User();
             this.User.Name = "admin";
             this.User.Password = "admin";
-            this.User.PasswordChar = "●";
+            //this.User.PasswordChar = "●";
         }
 
         #region LogonCommand

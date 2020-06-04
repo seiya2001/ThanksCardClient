@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="500" Width="600">
+        Title="{Binding Title}" Height="1020" Width="1980">
     <Grid>
         <StackPanel>
             <StackPanel.Background>
@@ -13,11 +13,20 @@
             <Border Background="AliceBlue" Height="15"/>
             <ContentControl prism:RegionManager.RegionName="ContentRegion" />
             <Border Background="AliceBlue" Height="15"/>
+            <ContentControl prism:RegionManager.RegionName="FooterRegion" />
             <TextBlock Text="TomoyoseHotel&#xA;ThanksCard System"
                        FontFamily="Georgia"
-                       FontSize="30"
-                       Margin="250,220,61.6,250"/>
-            <ContentControl prism:RegionManager.RegionName="FooterRegion" />
+                       FontSize="75"
+                       Margin="850,300,-0.4,0" RenderTransformOrigin="0.745,5.297" Height="270">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.041"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Window>
