@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="ThanksCardClient.Views.BussinessManagementMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <StackPanel>
+            <Button Content="部署間連携グラフ"  Width="120" Margin="0,0,0,0"/>
+            <Button Content="代表事例出力"  Width="120" Margin="0,10,0,0"/>
+            <Button Content="社員管理"  Width="120" Margin="0,10,0,0"/>
+            <Button Content="部署管理"  Width="120" Margin="0,10,0,0"/>
+            <Button Content="Q＆A管理"  Width="120" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

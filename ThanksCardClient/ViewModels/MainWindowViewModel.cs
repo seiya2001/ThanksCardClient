@@ -18,6 +18,7 @@ namespace ThanksCardClient.ViewModels
         {
             this.regionManager = regionManager;
             this.regionManager.RegisterViewWithRegion("ContentRegion", typeof(Views.Logon));
+
         }
     }
 }
