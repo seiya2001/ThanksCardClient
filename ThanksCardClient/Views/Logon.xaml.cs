@@ -15,7 +15,7 @@ namespace ThanksCardClient.Views
 
         }
 
-        //public char PasswordChar { get; set; }
+        public char PasswordChar { get; set; }
 
     }
 

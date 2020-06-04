@@ -5,13 +5,13 @@
              xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:local="clr-namespace:ThanksCardClient"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid Margin="-500,180,0,0" >
-        <StackPanel>
+    <Grid>
+        <StackPanel Margin="20,25,280,0">
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" />
-            <TextBlock Text="ユーザ名:" Width="120" Margin="-180,0,0,0"/>
-            <TextBox Text="{Binding User.Name}" Width="300" Height="25"/>
-            <TextBlock Text="パスワード:" Width="120" Margin="-180,0,0,0"/>
-            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}" PasswordChar="●" Width="300" Height="25"/>
+            <TextBlock Text="Name:" Width="120"/>
+            <TextBox Text="{Binding User.Name}" Width="120"/>
+            <TextBlock Text="Password:" Width="120"/>
+            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}" PasswordChar="●"/>
             <Button Content="ログイン" Command="{Binding LogonCommand}" Width="120"/>
         </StackPanel>
     </Grid>
