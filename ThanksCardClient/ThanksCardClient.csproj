@@ -67,6 +67,7 @@
     <Compile Include="Services\IRestService.cs" />
     <Compile Include="Services\RestService.cs" />
     <Compile Include="Services\SessionService.cs" />
+    <Compile Include="ViewModels\BussinessManagementMenuViewModel.cs" />
     <Compile Include="ViewModels\BussinessManagementViewModel.cs" />
     <Compile Include="ViewModels\DepartmentCreateViewModel.cs" />
     <Compile Include="ViewModels\DepartmentEditViewModel.cs" />
@@ -85,6 +86,9 @@
     <Compile Include="ViewModels\UserMstViewModel.cs" />
     <Compile Include="Views\BussinessManagement.xaml.cs">
       <DependentUpon>BussinessManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BussinessManagementMenu.xaml.cs">
+      <DependentUpon>BussinessManagementMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DepartmentCreate.xaml.cs">
       <DependentUpon>DepartmentCreate.xaml</DependentUpon>
@@ -132,6 +136,10 @@
       <DependentUpon>UserMst.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\BussinessManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BussinessManagementMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

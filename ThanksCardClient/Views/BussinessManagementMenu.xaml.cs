@@ -3,14 +3,13 @@
 namespace ThanksCardClient.Views
 {
     /// <summary>
-    /// Interaction logic for BussinessManagement
+    /// Interaction logic for BussinessManagementMenu
     /// </summary>
-    public partial class BussinessManagement : UserControl
+    public partial class BussinessManagementMenu : UserControl
     {
-        public BussinessManagement()
+        public BussinessManagementMenu()
         {
             InitializeComponent();
         }
-
     }
 }
