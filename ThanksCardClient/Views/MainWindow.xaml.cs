@@ -10,6 +10,9 @@ namespace ThanksCardClient.Views
         public MainWindow()
         {
             InitializeComponent();
+
+            this.WindowState = WindowState.Maximized; //画面最大化
+
         }
     }
 }
