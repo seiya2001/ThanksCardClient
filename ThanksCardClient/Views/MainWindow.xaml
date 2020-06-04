@@ -17,7 +17,7 @@
             <TextBlock Text="TomoyoseHotel&#xA;ThanksCard System"
                        FontFamily="Georgia"
                        FontSize="75"
-                       Margin="850,430,-0.4,0" RenderTransformOrigin="0.745,5.297" Height="270">
+                       Margin="850,300,-0.4,0" RenderTransformOrigin="0.745,5.297" Height="270">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
