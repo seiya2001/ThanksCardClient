@@ -81,6 +81,29 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region ShowBussinessManagementCommand
+        private DelegateCommand _ShowBussinessManagementCommand;
+        public DelegateCommand ShowBussinessManagementCommand =>
+            _ShowBussinessManagementCommand ?? (_ShowBussinessManagementCommand = new DelegateCommand(ExecuteShowBussinessManagementCommand));
+
+        void ExecuteShowBussinessManagementCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.BussinessManagement));
+        }
+        #endregion
+
+
+        #region ShowHumanManagementCommand
+        private DelegateCommand _ShowHumanManagementCommand;
+        public DelegateCommand ShowHumanManagementCommand =>
+            _ShowHumanManagementCommand ?? (_ShowHumanManagementCommand = new DelegateCommand(ExecuteShowHumanManagementCommand));
+
+        void ExecuteShowHumanManagementCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.HumanManagement));
+        }
+        #endregion
+
         #region LogoffCommand
         private DelegateCommand _logoffCommand;
         public DelegateCommand LogoffCommand =>

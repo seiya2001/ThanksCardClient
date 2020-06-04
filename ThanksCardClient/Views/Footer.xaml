@@ -12,8 +12,8 @@
 
         <StackPanel  Orientation="Horizontal">
             <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="45,182,20,0" />
-            <Button Content="人事ログイン" Margin="0,182,20,0" />
-            <Button Content="経営ログイン" Margin="0,182,20,0"  />
+            <Button Content="人事ログイン" Margin="0,182,20,0" Command="{Binding ShowHumanManagementCommand}"/>
+            <Button Content="経営ログイン" Margin="0,182,20,0" Command="{Binding ShowBussinessManagementCommand}" />
         </StackPanel>
 
     </Grid>
