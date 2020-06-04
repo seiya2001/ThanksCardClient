@@ -63,6 +63,7 @@
     <Compile Include="Models\ThanksCard.cs" />
     <Compile Include="Models\ThanksCardTag.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="PasswordBoxHelper.cs" />
     <Compile Include="Services\IRestService.cs" />
     <Compile Include="Services\RestService.cs" />
     <Compile Include="Services\SessionService.cs" />

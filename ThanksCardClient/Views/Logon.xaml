@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"            
              xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:local="clr-namespace:ThanksCardClient"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel Margin="50,25,280,0">
+        <StackPanel Margin="20,25,280,0">
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" />
             <TextBlock Text="Name:" Width="120"/>
             <TextBox Text="{Binding User.Name}" Width="120"/>
             <TextBlock Text="Password:" Width="120"/>
-            <TextBox Text="{Binding User.Password}" Width="120"/>
+            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}" PasswordChar="●"/>
             <Button Content="ログイン" Command="{Binding LogonCommand}" Width="120"/>
         </StackPanel>
-        <wpfx:ZoomboxViewFinderDisplay HorizontalAlignment="Left" Height="100" Margin="-69,-22,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </UserControl>
