@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Newtonsoft.Json;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using System;
@@ -31,6 +32,8 @@ namespace ThanksCardClient.ViewModels
             set { SetProperty(ref _ErrorMessage, value); }
         }
         #endregion
+
+        
 
         public LogonViewModel(IRegionManager regionManager)
         {
