@@ -13,6 +13,7 @@ namespace ThanksCardClient.Views
             
         }
 
+        
     }
 
 }
