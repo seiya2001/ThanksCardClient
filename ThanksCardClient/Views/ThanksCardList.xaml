@@ -3,15 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid>
-        <StackPanel>
-            <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False">
+    <Grid Margin="35,0,0,0">
+        <StackPanel >
+            <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False" >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
-                    <DataGridTextColumn Header="タイトル" Binding="{Binding Title}" />
-                    <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body}" />
+                    
                     <DataGridTextColumn Header="From" Binding="{Binding From.Name}" />
                     <DataGridTextColumn Header="To" Binding="{Binding To.Name}" />
+                    <DataGridTextColumn Header="タイトル" Binding="{Binding Title}" />
                     <DataGridTextColumn Header="作成日時" Binding="{Binding CreatedDateTime}" />
                     <DataGridTemplateColumn IsReadOnly="True" Header="カテゴリ">
                         <DataGridTemplateColumn.CellTemplate>
@@ -20,6 +19,8 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body}" />
+                    <DataGridTextColumn Header="いいね♪" IsReadOnly="True"/>
 
                 </DataGrid.Columns>
             </DataGrid>
