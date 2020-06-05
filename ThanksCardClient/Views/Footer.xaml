@@ -3,17 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ThanksCardClient.Views.Footer"             
-             prism:ViewModelLocator.AutoWireViewModel="True" Height="203.99" Width="291.844">
+             prism:ViewModelLocator.AutoWireViewModel="True" Height="200" Width="300">
     <Grid Margin="0,0,0,0" DockPanel.Dock="Top">
-        <Button Content="感謝カード作成" Command="{Binding ShowThanksCardCreateCommand}" Margin="10,25,150,130"/>
-        <Button Content="感謝カード一覧" Command="{Binding ShowThanksCardListCommand}"  Margin="10,110,150,50" />
-        <Button Content="Q＆A" Margin="150,110,10,50"/>
-        <Button Content="送信ボックス" Margin="150,25,10,130"/>
+        
 
         <StackPanel  Orientation="Horizontal">
-            <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="45,182,20,0" />
-            <Button Content="人事ログイン" Margin="0,182,20,0" Command="{Binding ShowHumanManagementCommand}"/>
-            <Button Content="経営ログイン" Margin="0,182,20,0" Command="{Binding ShowBussinessManagementCommand}" />
+            <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="0,182,0,0" />
+            <Button Content="マニュアル" Margin="200,182,20,0"  />
         </StackPanel>
 
     </Grid>

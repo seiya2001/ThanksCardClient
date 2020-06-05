@@ -63,6 +63,7 @@ namespace ThanksCardClient.ViewModels
                 this.ErrorMessage = "";
                 this.regionManager.RequestNavigate("HeaderRegion", nameof(Views.Header));
                 this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ThanksCardList));
+                this.regionManager.RequestNavigate("ContentRegion", nameof(Views.MainMenu));
                 this.regionManager.RequestNavigate("FooterRegion", nameof(Views.Footer));
             }
             else
