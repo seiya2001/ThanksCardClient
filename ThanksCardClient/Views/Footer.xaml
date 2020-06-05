@@ -9,7 +9,7 @@
 
         <StackPanel  Orientation="Horizontal">
             <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="0,182,0,0" />
-            <Button Content="マニュアル" Margin="200,182,20,0"  />
+            <Button Content="マニュアル" Margin="200,182,20,0"  Command="{Binding ShowManualCommand}"/>
         </StackPanel>
 
     </Grid>
