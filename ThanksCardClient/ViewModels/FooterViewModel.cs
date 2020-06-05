@@ -104,6 +104,18 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+
+        #region ShowManualCommand
+        private DelegateCommand _ShowManualCommand;
+        public DelegateCommand ShowManualCommand =>
+            _ShowHumanManagementCommand ?? (_ShowHumanManagementCommand = new DelegateCommand(ExecuteShowManualCommand));
+
+        void ExecuteShowManualCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Manual));
+        }
+        #endregion
+
         #region LogoffCommand
         private DelegateCommand _logoffCommand;
         public DelegateCommand LogoffCommand =>
