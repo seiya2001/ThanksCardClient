@@ -10,6 +10,6 @@
             <Button Content="社員管理画面" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}" Margin="0,0,0,10"/>
             <Button Content="部管理画面" Command="{Binding ShowDepartmentMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}" Margin="0,0,0,0"/>
         </StackPanel>
-        <Button Content="戻る" Margin="100,134,0,-43.2" RenderTransformOrigin="0.653,1.713" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
+       
     </Grid>
 </UserControl>
