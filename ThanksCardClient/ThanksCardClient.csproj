@@ -76,6 +76,7 @@
     <Compile Include="ViewModels\HeaderViewModel.cs" />
     <Compile Include="ViewModels\HumanManagementMenuViewModel.cs" />
     <Compile Include="ViewModels\HumanManagementViewModel.cs" />
+    <Compile Include="ViewModels\MainMenuViewModel.cs" />
     <Compile Include="ViewModels\TagCreateViewModel.cs" />
     <Compile Include="ViewModels\TagEditViewModel.cs" />
     <Compile Include="ViewModels\TagMstViewModel.cs" />
@@ -110,6 +111,9 @@
     </Compile>
     <Compile Include="Views\HumanManagementMenu.xaml.cs">
       <DependentUpon>HumanManagementMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TagCreate.xaml.cs">
       <DependentUpon>TagCreate.xaml</DependentUpon>
@@ -172,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Logon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
