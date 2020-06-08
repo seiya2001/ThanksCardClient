@@ -8,7 +8,7 @@
             <Button Content="部署間連携グラフ"  Margin="0,0,0,0"/>
             <Button Content="代表事例出力"  Margin="0,10,0,0"/>
             <Button Content="社員管理"  Margin="0,10,0,0"/>
-            <Button Content="部署管理"   Margin="0,10,0,0"/>
+            <Button Content="部署管理"   Margin="0,10,0,0" Command="{Binding ShowDepartmentMstCommand}"/>
             <Button Content="Q＆A管理"  Margin="0,10,0,0"/>
             <Button Content="メインメニュー" Command="{Binding ShowMainMenuCommand}"  Margin="0,10,0,0"/>
         </StackPanel>
