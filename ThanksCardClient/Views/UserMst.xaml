@@ -8,7 +8,7 @@
             <Button Content="+ユーザの新規作成" Command="{Binding UserCreateCommand}" Width="100" HorizontalAlignment="Left"/>
 
             <!-- ユーザ一覧(Userモデルのリスト)である MainWindowViewModel.Users をグリッド表示する。-->
-            <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Width="265">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
                     <DataGridTextColumn Header="名前" Binding="{Binding Name}" />
@@ -19,7 +19,7 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <!-- CommandParameter に {Binding} とだけ記述すると、UserMstViewModel.Users の要素、つまり User モデルを指定したことになる。-->
-                                <Button Content="編集" Command="{Binding DataContext.UserEditCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}" />
+                                <Button Content="編集" Command="{Binding DataContext.UserEditCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"  Width="30"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

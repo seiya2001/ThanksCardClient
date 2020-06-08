@@ -26,7 +26,8 @@ namespace ThanksCardClient.ViewModels
             this.AuthorizedUser = SessionService.Instance.AuthorizedUser;
         }
 
-      
+     
+
 
         #region ShowHumanManagementMenu
         private DelegateCommand _ShowHumanManagementMenu;
