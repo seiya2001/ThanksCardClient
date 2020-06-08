@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="ThanksCardClient.Views.Keikoku"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True" Height="200" Width="300">
+    <Grid  Margin="0,0,0,0">
+        <TextBlock Text="削除しますか?"  Margin="70,0,62.698,157.143" FontSize="30" Foreground="White" Background="Red" />
+        <StackPanel  Orientation="Horizontal">
+
+            <Button Content="はい" Margin="30,50,20,50" Width="100" FontSize="20" />
+            <Button Content="いいえ" Margin="20,50,10,50" Width="100" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
