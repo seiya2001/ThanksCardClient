@@ -14,6 +14,9 @@ namespace ThanksCardClient.Services
 
         public Boolean IsAuthorized { set; get; }
         public User AuthorizedUser { set; get; }
+        public Boolean IsAuthorizedHumanPassword { set; get; }
+        public HumanPassword AuthorizedHumanPassword { set; get; }
+
 
         public static SessionService Instance
         {

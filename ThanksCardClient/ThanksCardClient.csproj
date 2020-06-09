@@ -66,10 +66,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\HumanPassword.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\ThanksCard.cs" />
     <Compile Include="Models\ThanksCardTag.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="PasswordBoxHelper2.cs" />
     <Compile Include="PasswordBoxHelper.cs" />
     <Compile Include="Services\IRestService.cs" />
     <Compile Include="Services\RestService.cs" />
