@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using ThanksCardClient.Models;
 
 namespace ThanksCardClient.Services
@@ -232,20 +233,25 @@ namespace ThanksCardClient.Services
         public async Task<Department> DeleteDepartmentAsync(long Id)
         {
             Department responseDepartment = null;
-            try
+            MessageBoxResult result = MessageBox.Show("OKボタンを押して閉じてください","メッセージボックス",MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
             {
-                var response = await Client.DeleteAsync(this.BaseUrl + "/api/Departments/" + Id);
-                if (response.IsSuccessStatusCode)
+                try
                 {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    responseDepartment = JsonConvert.DeserializeObject<Department>(responseContent);
+                    var response = await Client.DeleteAsync(this.BaseUrl + "/api/Departments/" + Id);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var responseContent = await response.Content.ReadAsStringAsync();
+                        responseDepartment = JsonConvert.DeserializeObject<Department>(responseContent);
+                    }
+                }
+                catch (Exception e)
+                {
+                    System.Diagnostics.Debug.WriteLine("Exception in RestService.DeleteDepartmentAsync: " + e);
                 }
             }
-            catch (Exception e)
-            {
-                System.Diagnostics.Debug.WriteLine("Exception in RestService.DeleteDepartmentAsync: " + e);
-            }
             return responseDepartment;
+
         }
 
         public async Task<List<ThanksCard>> GetThanksCardsAsync()

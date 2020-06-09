@@ -3,7 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
+
     <Grid>
-            
-    </Grid>
+        <StackPanel Width="500">
+                <Image Source="/ManualPNG/システムマニュアル文-01.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-02.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-03.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-04.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-05.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-06.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-08.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-09.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-10.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-11.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-12.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-13.png" />
+                <Image Source="/ManualPNG/システムマニュアル文-14.png" />
+            </StackPanel>
+
+
+        </Grid>
+   
 </UserControl>
