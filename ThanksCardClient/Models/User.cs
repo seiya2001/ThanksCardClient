@@ -38,6 +38,42 @@ namespace ThanksCardClient.Models
         }
         #endregion
 
+        #region JapaneseNameProperty
+        private string _JapaneseName;
+        public string JapaneseName
+        {
+            get { return _JapaneseName; }
+            set { SetProperty(ref _JapaneseName, value); }
+        }
+        #endregion
+
+        #region NameRubyProperty
+        private string _NameRuby;
+        public string NameRuby
+        {
+            get { return _NameRuby; }
+            set { SetProperty(ref _NameRuby, value); }
+        }
+        #endregion
+
+        #region PhoneProperty
+        private string _Phone;
+        public string Phone
+        {
+            get { return _Phone; }
+            set { SetProperty(ref _Phone, value); }
+        }
+        #endregion
+
+        #region MailProperty
+        private string _Mail;
+        public string Mail
+        {
+            get { return _Mail; }
+            set { SetProperty(ref _Mail, value); }
+        }
+        #endregion
+
         #region IsAdminProperty
         private bool _IsAdmin;
         public bool IsAdmin
