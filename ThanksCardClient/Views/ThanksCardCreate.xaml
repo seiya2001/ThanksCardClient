@@ -37,13 +37,14 @@
             <TextBox Text="{Binding ThanksCard.Body}"/>
             <TextBlock Text="作成日:"/>
             <DatePicker SelectedDate="{Binding ThanksCard.CreatedDateTime}"/>
-            <ListBox ItemsSource="{Binding Tags}" IsSynchronizedWithCurrentItem="True" SelectionMode="Multiple" DisplayMemberPath="Name">
-                <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">
+            <TextBlock Text="カテゴリ" />
+            <ComboBox ItemsSource="{Binding Tags}" IsSynchronizedWithCurrentItem="True"  DisplayMemberPath="Name">
+                <ComboBox.ItemContainerStyle>
+                    <Style TargetType="ComboBoxItem">
                         <Setter Property="IsSelected" Value="{Binding Selected}" />
                     </Style>
-                </ListBox.ItemContainerStyle>
-            </ListBox>
+                </ComboBox.ItemContainerStyle>
+            </ComboBox>
             <Button Content="作成" Command="{Binding SubmitCommand}"/>
             <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left"/>
         </StackPanel>    

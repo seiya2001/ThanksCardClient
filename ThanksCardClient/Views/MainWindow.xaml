@@ -8,7 +8,7 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <StackPanel>
                 <StackPanel.Background>
-                    <ImageBrush ImageSource="Background.png"/>
+                    <ImageBrush ImageSource="Background.png" />
                 </StackPanel.Background>
                 <ContentControl prism:RegionManager.RegionName="HeaderRegion" />
                 <Border Background="AliceBlue" Height="15"/>
