@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Windows;
+using System.Windows.Forms;
+using TechTalk.SpecFlow.CommonModels;
 using ThanksCardClient.Models;
 using ThanksCardClient.Services;
 
@@ -86,10 +89,23 @@ namespace ThanksCardClient.ViewModels
 
         async void ExecuteUserDeleteCommand(User SelectedUser)
         {
-            User deletedUser = await SelectedUser.DeleteUserAsync(SelectedUser.Id);
+            const string message =
+         "削除しますか?";
+            const string caption = "警告";
+            var result = System.Windows.Forms.MessageBox.Show(message, caption,
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
 
-            // ユーザ一覧 Users を更新する。
-            this.UpdateUsers();
+            // If the no button was pressed ...
+            if (result == DialogResult.Yes)
+            {
+                User deletedUser = await SelectedUser.DeleteUserAsync(SelectedUser.Id);
+
+                // ユーザ一覧 Users を更新する。
+                this.UpdateUsers();
+            }
+
+
         }
         #endregion
 

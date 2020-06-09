@@ -138,7 +138,7 @@ namespace ThanksCardClient.ViewModels
 
             //TODO: Error handling
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ThanksCardList));
-
+            System.Windows.MessageBox.Show("送信しました。");
         }
         #endregion
 
