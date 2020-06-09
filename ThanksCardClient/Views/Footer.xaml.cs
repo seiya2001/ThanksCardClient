@@ -1,5 +1,5 @@
-﻿using System.Windows.Controls;
-
+﻿using System.Windows;
+using System.Windows.Controls;
 namespace ThanksCardClient.Views
 {
     /// <summary>
@@ -10,6 +10,7 @@ namespace ThanksCardClient.Views
         public Footer()
         {
             InitializeComponent();
+
         }
     }
 }

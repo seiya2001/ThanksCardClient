@@ -112,6 +112,7 @@ namespace ThanksCardClient.ViewModels
 
         void ExecuteShowManualCommand()
         {
+           
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Manual));
         }
         #endregion
@@ -130,6 +131,8 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.Regions["HeaderRegion"].RemoveAll();
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Logon));
             this.regionManager.Regions["FooterRegion"].RemoveAll();
+            System.Windows.MessageBox.Show("ログアウトしました。");
+
         }
         #endregion
 

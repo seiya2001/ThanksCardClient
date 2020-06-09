@@ -65,5 +65,19 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.UserMst));
         }
         #endregion
+
+        #region ShowUserMstCommand
+        private DelegateCommand _ShowUserMstCommand;
+
+
+        public DelegateCommand ShowUserMstCommand =>
+            _ShowUserMstCommand ?? (_ShowUserMstCommand = new DelegateCommand(ExecuteShowUserMstCommand));
+
+
+        void ExecuteShowUserMstCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.UserMst));
+        }
+        #endregion
     }
 }

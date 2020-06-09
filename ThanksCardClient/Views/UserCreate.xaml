@@ -16,5 +16,6 @@
             <ComboBox ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
             <Button Content="Submit" Command="{Binding SubmitCommand}"/>
         </StackPanel>
+        <Button Content="戻る" Command="{Binding ShowUserMstCommand}"   Width="30" Margin="0,180,0,0" HorizontalAlignment="Left"/>
     </Grid>
 </UserControl>

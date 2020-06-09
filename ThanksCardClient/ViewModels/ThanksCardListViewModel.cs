@@ -43,5 +43,17 @@ namespace ThanksCardClient.ViewModels
         {
             //throw new NotImplementedException();
         }
+
+
+        #region ShowMainMenuCommand
+        private DelegateCommand _ShowMainMenuCommand;
+        public DelegateCommand ShowMainMenuCommand =>
+            _ShowMainMenuCommand ?? (_ShowMainMenuCommand = new DelegateCommand(ExecuteShowMainMenuCommand));
+
+        void ExecuteShowMainMenuCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.MainMenu));
+        }
+        #endregion
     }
 }
