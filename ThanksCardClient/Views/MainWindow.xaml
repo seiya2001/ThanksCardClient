@@ -5,28 +5,30 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="1020" Width="1980">
     <Grid>
-        <StackPanel>
-            <StackPanel.Background>
-                <ImageBrush ImageSource="Background.png"/>
-            </StackPanel.Background>
-            <ContentControl prism:RegionManager.RegionName="HeaderRegion" />
-            <Border Background="AliceBlue" Height="15"/>
-            <ContentControl prism:RegionManager.RegionName="ContentRegion" />
-            <Border Background="AliceBlue" Height="15"/>
-            <ContentControl prism:RegionManager.RegionName="FooterRegion" />
-            <TextBlock Text="TomoyoseHotel&#xA;ThanksCard System"
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Background.png" />
+                </StackPanel.Background>
+                <ContentControl prism:RegionManager.RegionName="HeaderRegion" />
+                <Border Background="AliceBlue" Height="15"/>
+                <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+                <Border Background="AliceBlue" Height="15"/>
+                <ContentControl prism:RegionManager.RegionName="FooterRegion" />
+                <TextBlock Text="TomoyoseHotel&#xA;ThanksCard System"
                        FontFamily="Georgia"
                        FontSize="75"
                        Margin="850,300,-0.4,0" RenderTransformOrigin="0.745,5.297" Height="270">
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-0.041"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-        </StackPanel>
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.041"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>

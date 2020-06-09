@@ -8,11 +8,15 @@
             <Button Content="+ユーザの新規作成" Command="{Binding UserCreateCommand}" Width="100" HorizontalAlignment="Left"/>
 
             <!-- ユーザ一覧(Userモデルのリスト)である MainWindowViewModel.Users をグリッド表示する。-->
-            <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Width="265" >
+            <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Width="1000" >
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
-                    <DataGridTextColumn Header="名前" Binding="{Binding Name}" />
+                    <DataGridTextColumn Header="名前" Binding="{Binding JapaneseName}" />
+                    <DataGridTextColumn Header="フリガナ" Binding="{Binding NameRuby}" />
+                    <DataGridTextColumn Header="ユーザ名" Binding="{Binding Name}" />
                     <DataGridTextColumn Header="パスワード" Binding="{Binding Password}" />
+                    <DataGridTextColumn Header="電話番号" Binding="{Binding Phone}" />
+                    <DataGridTextColumn Header="メールアドレス" Binding="{Binding Mail}" />
                     <DataGridTextColumn Header="管理者" Binding="{Binding IsAdmin}" />
                     <DataGridTextColumn Header="部署" Binding="{Binding Department.Name}" />
                     <DataGridTemplateColumn Header="">

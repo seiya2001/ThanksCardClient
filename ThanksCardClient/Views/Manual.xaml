@@ -6,7 +6,7 @@
 
     <Grid>
         <StackPanel Width="500">
-                <Image Source="/ManualPNG/システムマニュアル文-01.png" />
+            <Image Source="/ManualPNG/システムマニュアル文-01.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-02.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-03.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-04.png" />

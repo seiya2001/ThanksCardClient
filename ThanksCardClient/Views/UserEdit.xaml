@@ -11,7 +11,15 @@
             <TextBox Text="{Binding User.Name}"/>
             <TextBlock Text="Password:"/>
             <TextBox Text="{Binding User.Password}"/>
-            <TextBlock Text="IsAdmin:"/>
+            <TextBlock Text="名前:"/>
+            <TextBox Text="{Binding User.JapaneseName}"/>
+            <TextBlock Text="フリガナ:"/>
+            <TextBox Text="{Binding User.NameRuby}"/>
+            <TextBlock Text="電話番号:"/>
+            <TextBox Text="{Binding User.Phone}"/>
+            <TextBlock Text="メールアドレス:"/>
+            <TextBox Text="{Binding User.Mail}"/>
+            <TextBlock Text="管理者権限:"/>
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
             <TextBlock Text="Department:"/>
             <ComboBox SelectedItem="{Binding User.Department}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
