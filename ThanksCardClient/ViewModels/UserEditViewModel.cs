@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using ThanksCardClient.Models;
+using ThanksCardClient.Views;
 
 namespace ThanksCardClient.ViewModels
 {
@@ -63,6 +64,20 @@ namespace ThanksCardClient.ViewModels
         {
             User updatedUser = await User.PutUserAsync(this.User);
 
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.UserMst));
+        }
+        #endregion
+
+        #region ShowUserMstCommand
+        private DelegateCommand _ShowUserMstCommand;
+
+
+        public DelegateCommand ShowUserMstCommand =>
+            _ShowUserMstCommand ?? (_ShowUserMstCommand = new DelegateCommand(ExecuteShowUserMstCommand));
+
+
+        void ExecuteShowUserMstCommand()
+        {
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.UserMst));
         }
         #endregion

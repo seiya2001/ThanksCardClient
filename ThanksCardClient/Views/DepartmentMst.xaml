@@ -32,5 +32,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
+        <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}" Margin="0,180,0,0"    Width="30" HorizontalAlignment="Left"/>
     </Grid>
 </UserControl>
