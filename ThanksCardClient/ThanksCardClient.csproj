@@ -39,6 +39,10 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +52,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Annotated\Windows.winmd</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -271,6 +278,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -278,6 +286,9 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Pdf\Manual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -291,9 +302,29 @@
       <Version>12.0.3</Version>
     </PackageReference>
     <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
+    <PackageReference Include="Select.Pdf">
+      <Version>20.1.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\Background.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="ManualPNG\システムマニュアル文-01.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-02.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-03.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-04.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-05.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-06.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-07.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-08.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-09.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-10.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-11.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-12.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-13.png" />
+    <Resource Include="ManualPNG\システムマニュアル文-14.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
