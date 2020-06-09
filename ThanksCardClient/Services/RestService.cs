@@ -388,5 +388,33 @@ namespace ThanksCardClient.Services
             }
             return responseTag;
         }
+
+        public async Task<HumanPassword> HumanLogonAsync(HumanPassword humanPassword)
+        {
+            var jObject = JsonConvert.SerializeObject(humanPassword);
+
+            //Make Json object into content type
+            var content = new StringContent(jObject);
+            //Adding header of the contenttype
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            HumanPassword responseHumanPassword = null;
+            try
+            {
+                var response = await Client.PostAsync(this.BaseUrl + "/api/HumanLogon", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    responseHumanPassword = JsonConvert.DeserializeObject<HumanPassword>(responseContent);
+                }
+            }
+            catch (Exception e)
+            {
+                // TODO
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.HumanLogonAsync: " + e);
+            }
+            return responseHumanPassword;
+        }
     }
 }
