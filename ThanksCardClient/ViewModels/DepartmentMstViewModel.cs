@@ -4,6 +4,7 @@ using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using ThanksCardClient.Models;
 
 namespace ThanksCardClient.ViewModels
@@ -84,6 +85,7 @@ namespace ThanksCardClient.ViewModels
 
             // 一覧 Departments を更新する。
             this.UpdateDepartments();
+         
         }
         #endregion
 

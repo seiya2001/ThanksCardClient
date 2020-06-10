@@ -233,7 +233,7 @@ namespace ThanksCardClient.Services
         public async Task<Department> DeleteDepartmentAsync(long Id)
         {
             Department responseDepartment = null;
-            MessageBoxResult result = MessageBox.Show("OKボタンを押して閉じてください","メッセージボックス",MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("削除しますか?","警告画面",MessageBoxButton.YesNo,MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
             {
                 try
