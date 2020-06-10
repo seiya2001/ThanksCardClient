@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Forms;
 using ThanksCardClient.Models;
 using ThanksCardClient.Services;
 
@@ -138,7 +139,12 @@ namespace ThanksCardClient.ViewModels
 
             //TODO: Error handling
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ThanksCardList));
-            System.Windows.MessageBox.Show("送信しました。");
+           
+            const string message =
+        "送信しました";
+            const string caption = "お知らせ";
+            System.Windows.Forms.MessageBox.Show(message, caption,
+                                         MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
 
