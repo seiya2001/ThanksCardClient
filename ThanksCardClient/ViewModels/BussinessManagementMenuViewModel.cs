@@ -13,17 +13,27 @@ namespace ThanksCardClient.ViewModels
     {
         private readonly IRegionManager regionManager;
 
+
         private User _AuthorizedUser;
         public User AuthorizedUser
         {
             get { return _AuthorizedUser; }
             set { SetProperty(ref _AuthorizedUser, value); }
         }
+        private BusinessPassword _AuthorizedBusinessPassword;
+        public BusinessPassword AuthorizedBusinessPassword
+        {
+            get { return _AuthorizedBusinessPassword; }
+            set { SetProperty(ref _AuthorizedBusinessPassword, value); }
+        }
 
         public BussinessManagementMenuViewModel(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
             this.AuthorizedUser = SessionService.Instance.AuthorizedUser;
+            
+            this.AuthorizedBusinessPassword = SessionService.Instance.AuthorizedBusinessPassword;
+
         }
 
         #region ShowMainMenuCommand

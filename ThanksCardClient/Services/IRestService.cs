@@ -13,6 +13,7 @@ namespace ThanksCardClient.Services
         // Logon REST API Client
         Task<User> LogonAsync(User user);
         Task<HumanPassword> HumanLogonAsync(HumanPassword humanPassword);
+        Task<BusinessPassword> BusinessLogonAsync(BusinessPassword businessPassword);
 
         // DepartmentUsers REST API Client
         Task<List<User>> GetDepartmentUsersAsync(long? DepartmentId);
