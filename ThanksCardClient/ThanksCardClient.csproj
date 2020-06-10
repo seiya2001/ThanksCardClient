@@ -65,6 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\BusinessPassword.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\HumanPassword.cs" />
     <Compile Include="Models\Tag.cs" />

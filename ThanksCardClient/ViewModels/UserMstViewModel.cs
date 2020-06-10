@@ -7,7 +7,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Forms;
-using TechTalk.SpecFlow.CommonModels;
+//using TechTalk.SpecFlow.CommonModels;
 using ThanksCardClient.Models;
 using ThanksCardClient.Services;
 

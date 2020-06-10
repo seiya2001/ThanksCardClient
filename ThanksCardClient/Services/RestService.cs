@@ -416,5 +416,33 @@ namespace ThanksCardClient.Services
             }
             return responseHumanPassword;
         }
+
+        public async Task<BusinessPassword> BusinessLogonAsync(BusinessPassword businessPassword)
+        {
+            var jObject = JsonConvert.SerializeObject(businessPassword);
+
+            //Make Json object into content type
+            var content = new StringContent(jObject);
+            //Adding header of the contenttype
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            BusinessPassword responseBusinessPassword = null;
+            try
+            {
+                var response = await Client.PostAsync(this.BaseUrl + "/api/BusinessLogon", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    responseBusinessPassword = JsonConvert.DeserializeObject<BusinessPassword>(responseContent);
+                }
+            }
+            catch (Exception e)
+            {
+                // TODO
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.BusinessLogonAsync: " + e);
+            }
+            return responseBusinessPassword;
+        }
     }
 }
