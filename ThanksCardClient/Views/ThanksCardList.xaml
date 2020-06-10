@@ -19,13 +19,21 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body}" />
-                    <DataGridTextColumn Header="いいね♪" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body, NotifyOnSourceUpdated=True, UpdateSourceTrigger=LostFocus}" />
+                    <DataGridTextColumn Header="返信内容" Binding="{Binding Reply}"/>
+                    <DataGridTemplateColumn Header="">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!-- CommandParameter に {Binding} とだけ記述すると、UserMstViewModel.Users の要素、つまり User モデルを指定したことになる。-->
+                                <Button Content="返信" Command="{Binding DataContext.ThanksCardReplyCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"  Width="30"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
 
                 </DataGrid.Columns>
             </DataGrid>
            
         </StackPanel>
-        <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left"/>
+        <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left" />
     </Grid>
 </UserControl>

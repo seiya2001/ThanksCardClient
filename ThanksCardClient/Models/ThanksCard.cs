@@ -91,6 +91,15 @@ namespace ThanksCardClient.Models
         }
         #endregion
 
+        #region ReplyProperty
+        private string _Reply;
+        public string Reply
+        {
+            get { return _Reply; }
+            set { SetProperty(ref _Reply, value); }
+        }
+        #endregion
+
 
         public ThanksCard()
         {
@@ -102,6 +111,13 @@ namespace ThanksCardClient.Models
             IRestService rest = new RestService();
             List<ThanksCard> thanksCards = await rest.GetThanksCardsAsync();
             return thanksCards;
+        }
+
+        public async Task<ThanksCard> PutThanksCardAsync(ThanksCard thanksCard)
+        {
+            IRestService rest = new RestService();
+            ThanksCard updatedThanksCard = await rest.PutThanksCardAsync(thanksCard);
+            return updatedThanksCard;
         }
 
         public async Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard)

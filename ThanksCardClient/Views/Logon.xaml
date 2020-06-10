@@ -4,6 +4,7 @@
              xmlns:prism="http://prismlibrary.com/"            
              xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:local="clr-namespace:ThanksCardClient"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid Margin="-500,180,0,0" >
         <StackPanel>
@@ -11,9 +12,9 @@
 
 
             <TextBlock Text="ユーザ名:" Width="120" Margin="-180,0,0,0"/>
-            <TextBox Text="{Binding User.Name}" Width="300" Height="25"/>
+            <TextBox Text="{Binding User.Name}" Width="300" Height="25" mah:TextBoxHelper.Watermark="ユーザ名を入力してください" mah:TextBoxHelper.ClearTextButton="True"/>
             <TextBlock Text="パスワード:" Width="120" Margin="-180,0,0,0"/>
-            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}" PasswordChar="●" Width="300" Height="25"/>
+            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}" PasswordChar="●" Width="300" Height="25" mah:TextBoxHelper.Watermark="パスワードを入力してください" mah:TextBoxHelper.ClearTextButton="True"/>
 
             <Button Content="ログイン" Command="{Binding LogonCommand}" Width="120"/>
         </StackPanel>

@@ -96,6 +96,7 @@
     <Compile Include="ViewModels\TagMstViewModel.cs" />
     <Compile Include="ViewModels\ThanksCardCreateViewModel.cs" />
     <Compile Include="ViewModels\ThanksCardListViewModel.cs" />
+    <Compile Include="ViewModels\ThanksCardReplyViewModel.cs" />
     <Compile Include="ViewModels\UserCreateViewModel.cs" />
     <Compile Include="ViewModels\UserEditViewModel.cs" />
     <Compile Include="ViewModels\UserMstViewModel.cs" />
@@ -146,6 +147,9 @@
     </Compile>
     <Compile Include="Views\ThanksCardList.xaml.cs">
       <DependentUpon>ThanksCardList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThanksCardReply.xaml.cs">
+      <DependentUpon>ThanksCardReply.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserCreate.xaml.cs">
       <DependentUpon>UserCreate.xaml</DependentUpon>
@@ -238,6 +242,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ThanksCardList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ThanksCardReply.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
