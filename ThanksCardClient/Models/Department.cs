@@ -102,5 +102,10 @@ namespace ThanksCardClient.Models
             Department deletedDepartment = await rest.DeleteDepartmentAsync(Id);
             return deletedDepartment;
         }
+
+        internal Task<User> DeleteUserAsync(long id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
