@@ -9,7 +9,7 @@
 
        
             <Button Content="+部署の新規作成" Command="{Binding DepartmentCreateCommand}" Width="100" HorizontalAlignment="Left" />
-            <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}"     Width="30" HorizontalAlignment="Right"/>
+            <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}"     Width="100" HorizontalAlignment="Right"/>
             <!-- ユーザ一覧(Departmentモデルのリスト)である MainWindowViewModel.Departments をグリッド表示する。-->
             <DataGrid ItemsSource="{Binding Departments}" Style="{StaticResource MahApps.Styles.DataGrid.Azure}" AutoGenerateColumns="False" CanUserAddRows="False" >
                 <DataGrid.Columns>
