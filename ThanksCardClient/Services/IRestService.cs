@@ -39,5 +39,6 @@ namespace ThanksCardClient.Services
         Task<Tag> PostTagAsync(Tag tag);
         Task<Tag> PutTagAsync(Tag tag);
         Task<Tag> DeleteTagAsync(long Id);
+        Task<ThanksCard> PutThanksCardAsync(ThanksCard thanksCard);
     }
 }

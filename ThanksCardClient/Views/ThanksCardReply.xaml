@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="ThanksCardClient.Views.ThanksCardReply"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="返信："/>
+            <TextBox Text="{Binding ThanksCard.Reply}"/>
+            <Button Content="返信を登録する" Command="{Binding SubmitCommand}"/>
+            <Button Content="戻る" Command="{Binding ShowThanksCardListCommand}" Margin="0,180,0,0"    Width="30" HorizontalAlignment="Left"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

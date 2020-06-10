@@ -1,9 +1,11 @@
-﻿<Window x:Class="ThanksCardClient.Views.MainWindow"
+﻿<mah:MetroWindow x:Class="ThanksCardClient.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="1020" Width="1980">
+        Title="{Binding Title}" Height="1020" Width="1980"
+                 >
     <Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <StackPanel>
@@ -11,9 +13,9 @@
                     <ImageBrush ImageSource="Background.png" />
                 </StackPanel.Background>
                 <ContentControl prism:RegionManager.RegionName="HeaderRegion" />
-                <Border Background="AliceBlue" Height="15"/>
+                
                 <ContentControl prism:RegionManager.RegionName="ContentRegion" />
-                <Border Background="AliceBlue" Height="15"/>
+                
                 <ContentControl prism:RegionManager.RegionName="FooterRegion" />
                 <TextBlock Text="TomoyoseHotel&#xA;ThanksCard System"
                        FontFamily="Georgia"
@@ -31,4 +33,4 @@
             </StackPanel>
         </ScrollViewer>
     </Grid>
-</Window>
+</mah:MetroWindow>

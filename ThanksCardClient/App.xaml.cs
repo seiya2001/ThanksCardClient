@@ -38,6 +38,7 @@ namespace ThanksCardClient
             containerRegistry.RegisterForNavigation<BussinessManagementMenu>();
             containerRegistry.RegisterForNavigation<MainMenu>();
             containerRegistry.RegisterForNavigation<Manual>();
+            containerRegistry.RegisterForNavigation<ThanksCardReply>();
         }
     }
 }
