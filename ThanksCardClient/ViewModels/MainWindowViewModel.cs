@@ -5,7 +5,7 @@ namespace ThanksCardClient.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
-        private string _title = "ThanksCard System";
+        private string _title = "Tomoyose Hotel ThanksCard System";
         public string Title
         {
             get { return _title; }
