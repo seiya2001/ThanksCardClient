@@ -7,8 +7,8 @@
     <Grid Margin="0,0,0,0" DockPanel.Dock="Top">
         <Button Content="感謝カード作成" Command="{Binding ShowThanksCardCreateCommand}" Margin="20,50,320,260" Background="Red"/>
         <Button Content="感謝カード一覧" Command="{Binding ShowThanksCardListCommand}"  Margin="20,220,320,100" Background="#FF949494"/>
-        <Button Content="Q＆A" Margin="320,220,20,100" Background="#FF0031FF"/>
-        <Button Content="送信ボックス" Margin="320,50,20,260" Background="#FF0EFFFB"/>
+        <Button Content="Q＆A（未実装）" Margin="320,220,20,100" Background="#FF0031FF"/>
+        <Button Content="送信ボックス（未実装）" Margin="320,50,20,260" Background="#FF0EFFFB"/>
 
         <StackPanel  Orientation="Horizontal" Margin="0,0,0,-13">
 
