@@ -6,9 +6,9 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Name:"/>
+            <TextBlock Text="ユーザ名:"/>
             <TextBox Text="{Binding User.Name}"/>
-            <TextBlock Text="Password:"/>
+            <TextBlock Text="パスワード:"/>
             <TextBox Text="{Binding User.Password}"/>
             <TextBlock Text="名前:"/>
             <TextBox Text="{Binding User.JapaneseName}"/>
@@ -20,9 +20,9 @@
             <TextBox Text="{Binding User.Mail}"/>
             <TextBlock Text="管理者権限:"/>
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
-            <TextBlock Text="Department:"/>
+            <TextBlock Text="所属課（部署）:"/>
             <ComboBox ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
-            <Button Content="Submit" Command="{Binding SubmitCommand}"/>
+            <Button Content="登録" Command="{Binding SubmitCommand}"/>
         </StackPanel>
         <Button Content="戻る" Command="{Binding ShowUserMstCommand}"   Width="30" Margin="0,400,0,0" HorizontalAlignment="Left"/>
     </Grid>

@@ -6,14 +6,14 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Code:"/>
+            <TextBlock Text="コード:"/>
             <TextBox Text="{Binding Department.Code}"/>
-            <TextBlock Text="Name:"/>
+            <TextBlock Text="部署名:"/>
             <TextBox Text="{Binding Department.Name}"/>
-            <TextBlock Text="Parent:"/>
+            <TextBlock Text="課に変更する場合は親部署を選んでください:"/>
             <ComboBox SelectedItem="{Binding Department.Parent}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding Department.ParentId}" SelectedValuePath="Id"/>
 
-            <Button Content="Submit" Command="{Binding SubmitCommand}"/>
+            <Button Content="適用" Command="{Binding SubmitCommand}"/>
             <Button Content="戻る" Command="{Binding ShowDepartmentMstCommand}" Margin="0,180,0,0"    Width="30" HorizontalAlignment="Left"/>
         </StackPanel>
     </Grid>

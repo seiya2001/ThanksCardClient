@@ -6,8 +6,8 @@
     
     <Grid Margin="0,0,0,0" DockPanel.Dock="Top" >
         <StackPanel>
-            <Button Content="部署間連携グラフ" Margin="0,0,0,10"/>
-            <Button Content="社員別カード受信数" Margin="0,0,0,10"/>
+            <Button Content="部署間連携グラフ（未実装）" Margin="0,0,0,10"/>
+            <Button Content="社員別カード受信数（未実装）" Margin="0,0,0,10"/>
             <Button Content="社員管理画面" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}" Margin="0,0,0,10"/>
             <Button Content="部管理画面" Command="{Binding ShowDepartmentMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}" Margin="0,0,0,0"/>
            
