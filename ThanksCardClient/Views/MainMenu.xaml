@@ -10,7 +10,7 @@
         <Button Content="Q＆A" Margin="160,110,10,50"/>
         <Button Content="送信ボックス" Margin="160,25,10,130"/>
 
-        <StackPanel  Orientation="Horizontal">
+        <StackPanel  Orientation="Horizontal" Margin="0,0,0,-13">
             <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="40,182,20,0" />
             <Button Content="人事ログイン" Margin="0,182,20,0" Command="{Binding ShowHumanManagementCommand}"/>
             <Button Content="経営ログイン" Margin="0,182,40,0" Command="{Binding ShowBussinessManagementCommand}" />

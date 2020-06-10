@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
 
     <Grid>
-        <StackPanel Width="500">
+        <StackPanel Width="600">
             <Image Source="/ManualPNG/システムマニュアル文-01.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-02.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-03.png" />
