@@ -7,8 +7,8 @@
         <StackPanel>
             <TextBlock Text="返信："/>
             <TextBox Text="{Binding ThanksCard.Reply}"/>
-            <Button Content="返信を登録する" Command="{Binding SubmitCommand}"/>
-            <Button Content="戻る" Command="{Binding ShowThanksCardListCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left"/>
+            <Button Content="返信を登録する" Command="{Binding SubmitCommand}" Background="Silver"/>
+            <Button Content="戻る" Command="{Binding ShowThanksCardListCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left" Background="Silver"/>
         </StackPanel>
     </Grid>
 </UserControl>

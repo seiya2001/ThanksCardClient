@@ -45,9 +45,9 @@
                     </Style>
                 </ComboBox.ItemContainerStyle>
             </ComboBox>
-            
-            <Button Content="作成" Command="{Binding SubmitCommand}"/>
-            <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left" Width="100"/>
+
+            <Button Content="作成" Command="{Binding SubmitCommand}" Background="Silver"/>
+            <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left" Width="100" Background="Silver"/>
         </StackPanel>    
     </Grid>
 </UserControl>

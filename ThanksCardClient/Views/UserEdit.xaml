@@ -23,8 +23,8 @@
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
             <TextBlock Text="所属課（部署）:"/>
             <ComboBox SelectedItem="{Binding User.Department}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
-            <Button Content="適用" Command="{Binding SubmitCommand}"/>
-            <Button Content="戻る" Command="{Binding ShowUserMstCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left"/>
+            <Button Content="適用" Command="{Binding SubmitCommand}" Background="Silver"/>
+            <Button Content="戻る" Command="{Binding ShowUserMstCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left" Background="Silver"/>
         </StackPanel>
        
         

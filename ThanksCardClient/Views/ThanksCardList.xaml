@@ -6,7 +6,7 @@
     <Grid Margin="35,0,0,0">
         <StackPanel >
             <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False" >
-                <DataGrid.Columns>
+                <DataGrid.Columns >
                     
                     <DataGridTextColumn Header="From" Binding="{Binding From.Name}" />
                     <DataGridTextColumn Header="To" Binding="{Binding To.Name}" />
@@ -25,7 +25,7 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <!-- CommandParameter に {Binding} とだけ記述すると、UserMstViewModel.Users の要素、つまり User モデルを指定したことになる。-->
-                                <Button Content="返信" Command="{Binding DataContext.ThanksCardReplyCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"  Width="30"/>
+                                <Button Content="返信" Background="Silver" Command="{Binding DataContext.ThanksCardReplyCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"  Width="30"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -34,6 +34,6 @@
             </DataGrid>
            
         </StackPanel>
-        <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left" Width="100" />
+        <Button Content="戻る" Command="{Binding ShowMainMenuCommand}"  Margin="0,180,0,0" HorizontalAlignment="Left" Width="100" Background="Silver"/>
     </Grid>
 </UserControl>

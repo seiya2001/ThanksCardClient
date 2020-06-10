@@ -22,8 +22,8 @@
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
             <TextBlock Text="所属課（部署）:"/>
             <ComboBox ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
-            <Button Content="登録" Command="{Binding SubmitCommand}"/>
+            <Button Content="登録" Command="{Binding SubmitCommand}" Background="Silver"/>
         </StackPanel>
-        <Button Content="戻る" Command="{Binding ShowUserMstCommand}"   Width="100" Margin="0,400,0,0" HorizontalAlignment="Left"/>
+        <Button Content="戻る" Command="{Binding ShowUserMstCommand}"   Width="100" Margin="0,400,0,0" HorizontalAlignment="Left" Background="Silver"/>
     </Grid>
 </UserControl>

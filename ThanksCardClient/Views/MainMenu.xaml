@@ -5,15 +5,15 @@
     prism:ViewModelLocator.AutoWireViewModel="True" Height="400" Width="600">
 
     <Grid Margin="0,0,0,0" DockPanel.Dock="Top">
-        <Button Content="感謝カード作成" Command="{Binding ShowThanksCardCreateCommand}" Margin="20,50,320,260"/>
-        <Button Content="感謝カード一覧" Command="{Binding ShowThanksCardListCommand}"  Margin="20,220,320,100" />
-        <Button Content="Q＆A" Margin="320,220,20,100"/>
-        <Button Content="送信ボックス" Margin="320,50,20,260"/>
+        <Button Content="感謝カード作成" Command="{Binding ShowThanksCardCreateCommand}" Margin="20,50,320,260" Background="Red"/>
+        <Button Content="感謝カード一覧" Command="{Binding ShowThanksCardListCommand}"  Margin="20,220,320,100" Background="#FF949494"/>
+        <Button Content="Q＆A" Margin="320,220,20,100" Background="#FF0031FF"/>
+        <Button Content="送信ボックス" Margin="320,50,20,260" Background="#FF0EFFFB"/>
 
         <StackPanel  Orientation="Horizontal" Margin="0,0,0,-13">
-          
-            <Button Content="人事ログイン" Margin="220,362,40,0" Command="{Binding ShowHumanManagementCommand}"/>
-            <Button Content="経営ログイン" Margin="0,362,80,0" Command="{Binding ShowBussinessManagementCommand}" />
+
+            <Button Content="人事ログイン" Margin="220,362,40,0" Command="{Binding ShowHumanManagementCommand}" Background="Silver"/>
+            <Button Content="経営ログイン" Margin="0,362,80,0" Command="{Binding ShowBussinessManagementCommand}" Background="Silver"/>
         </StackPanel>
     </Grid>
 </UserControl>
