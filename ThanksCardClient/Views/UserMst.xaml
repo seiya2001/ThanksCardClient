@@ -6,7 +6,7 @@
     <Grid >
         <StackPanel  >
             <Button Content="+ユーザの新規作成" Command="{Binding UserCreateCommand}" Width="100" HorizontalAlignment="Left"/>
-            <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}"     Width="30" HorizontalAlignment="Right"/>
+            <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}"     Width="100" HorizontalAlignment="Right"/>
             <!-- ユーザ一覧(Userモデルのリスト)である MainWindowViewModel.Users をグリッド表示する。-->
             <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Width="1000" >
                 <DataGrid.Columns>

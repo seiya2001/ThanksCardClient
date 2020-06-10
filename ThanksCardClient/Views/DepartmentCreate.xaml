@@ -14,7 +14,7 @@
             <ComboBox SelectedItem="{Binding Department.Parent}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding Department.Parent}"/>
 
             <Button Content="登録" Command="{Binding SubmitCommand}"/>
-            <Button Content="戻る" Command="{Binding ShowDepartmentMstCommand}" Margin="0,180,0,0"    Width="30" HorizontalAlignment="Left"/>
+            <Button Content="戻る" Command="{Binding ShowDepartmentMstCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left"/>
         </StackPanel>
     </Grid>
 </UserControl>

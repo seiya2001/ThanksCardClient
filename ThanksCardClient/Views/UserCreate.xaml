@@ -24,6 +24,6 @@
             <ComboBox ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
             <Button Content="登録" Command="{Binding SubmitCommand}"/>
         </StackPanel>
-        <Button Content="戻る" Command="{Binding ShowUserMstCommand}"   Width="30" Margin="0,400,0,0" HorizontalAlignment="Left"/>
+        <Button Content="戻る" Command="{Binding ShowUserMstCommand}"   Width="100" Margin="0,400,0,0" HorizontalAlignment="Left"/>
     </Grid>
 </UserControl>
