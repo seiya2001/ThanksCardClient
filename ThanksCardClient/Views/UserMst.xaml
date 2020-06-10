@@ -4,9 +4,9 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid >
-        <StackPanel>
+        <StackPanel  >
             <Button Content="+ユーザの新規作成" Command="{Binding UserCreateCommand}" Width="100" HorizontalAlignment="Left"/>
-
+            <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}"     Width="30" HorizontalAlignment="Right"/>
             <!-- ユーザ一覧(Userモデルのリスト)である MainWindowViewModel.Users をグリッド表示する。-->
             <DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Width="1000" >
                 <DataGrid.Columns>
@@ -23,20 +23,20 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <!-- CommandParameter に {Binding} とだけ記述すると、UserMstViewModel.Users の要素、つまり User モデルを指定したことになる。-->
-                                <Button Content="編集" Command="{Binding DataContext.UserEditCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"  Width="30"/>
+                                <Button Content="編集" Command="{Binding DataContext.UserEditCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding}"  Width="30"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                     <DataGridTemplateColumn Header="">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="削除" Command="{Binding DataContext.UserDeleteCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}" />
+                                <Button Content="削除" Command="{Binding DataContext.UserDeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding}" />
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}" Margin="0,180,0,0"    Width="30" HorizontalAlignment="Left"/>
+      
     </Grid>
 </UserControl>
