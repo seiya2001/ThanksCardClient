@@ -127,17 +127,11 @@
     <Compile Include="Views\HumanManagementMenu.xaml.cs">
       <DependentUpon>HumanManagementMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Keikoku.xaml.cs">
-      <DependentUpon>Keikoku.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Manual.xaml.cs">
       <DependentUpon>Manual.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Sousin.xaml.cs">
-      <DependentUpon>Sousin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TagCreate.xaml.cs">
       <DependentUpon>TagCreate.xaml</DependentUpon>
@@ -202,10 +196,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Keikoku.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\Logon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -232,10 +222,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\Manual.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Sousin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

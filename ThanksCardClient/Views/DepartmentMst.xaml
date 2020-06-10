@@ -6,8 +6,10 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <StackPanel>
-            <Button Content="+部署の新規作成" Command="{Binding DepartmentCreateCommand}" Width="100" HorizontalAlignment="Left" />
 
+       
+            <Button Content="+部署の新規作成" Command="{Binding DepartmentCreateCommand}" Width="100" HorizontalAlignment="Left" />
+            <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}"     Width="30" HorizontalAlignment="Right"/>
             <!-- ユーザ一覧(Departmentモデルのリスト)である MainWindowViewModel.Departments をグリッド表示する。-->
             <DataGrid ItemsSource="{Binding Departments}" Style="{StaticResource MahApps.Styles.DataGrid.Azure}" AutoGenerateColumns="False" CanUserAddRows="False" >
                 <DataGrid.Columns>
@@ -33,6 +35,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <Button Content="戻る" Command="{Binding ShowBussinessManagementMenuCommand}" Margin="0,180,0,0"    Width="30" HorizontalAlignment="Left"/>
+      
     </Grid>
 </UserControl>
