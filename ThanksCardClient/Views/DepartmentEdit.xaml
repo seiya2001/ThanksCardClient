@@ -11,10 +11,10 @@
             <TextBlock Text="部署名:"/>
             <TextBox Text="{Binding Department.Name}"/>
             <TextBlock Text="課に変更する場合は親部署を選んでください:"/>
-            <ComboBox SelectedItem="{Binding Department.Parent}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding Department.ParentId}" SelectedValuePath="Id"/>
+            <ComboBox SelectedItem="{Binding Department.Parent}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding Department.ParentId}" SelectedValuePath="Id"  />
 
-            <Button Content="適用" Command="{Binding SubmitCommand}"/>
-            <Button Content="戻る" Command="{Binding ShowDepartmentMstCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left"/>
+            <Button Content="適用" Command="{Binding SubmitCommand}"  Background="Silver"/>
+            <Button Content="戻る" Command="{Binding ShowDepartmentMstCommand}" Margin="0,180,0,0"    Width="100" HorizontalAlignment="Left"  Background="Silver"/>
         </StackPanel>
     </Grid>
 </UserControl>

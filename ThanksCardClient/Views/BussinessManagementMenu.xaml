@@ -5,14 +5,14 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <StackPanel>
-            <Button Content="部署間連携グラフ(未実装)"  Margin="0,0,0,0"/>
-            <Button Content="代表事例出力(未実装)"  Margin="0,10,0,0"/>
+            <Button Content="部署間連携グラフ(未実装)"  Margin="0,0,0,0"  Background="Silver"/>
+            <Button Content="代表事例出力(未実装)"  Margin="0,10,0,0"  Background="Silver"/>
 
-            <Button Content="社員管理" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}" Margin="0,10,0,0"/>
-            <Button Content="部署管理"   Margin="0,10,0,0" Command="{Binding ShowDepartmentMstCommand}"/>
+            <Button Content="社員管理" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}" Margin="0,10,0,0"  Background="Silver"/>
+            <Button Content="部署管理"   Margin="0,10,0,0" Command="{Binding ShowDepartmentMstCommand}"  Background="Silver"/>
 
-            <Button Content="Q＆A管理(未実装)"  Margin="0,10,0,0"/>
-            <Button Content="メインメニュー" Command="{Binding ShowMainMenuCommand}"  Margin="0,10,0,0"/>
+            <Button Content="Q＆A管理(未実装)"  Margin="0,10,0,0"  Background="Silver"/>
+            <Button Content="メインメニュー" Command="{Binding ShowMainMenuCommand}"  Margin="0,10,0,0"  Background="Silver"/>
         </StackPanel>
     </Grid>
 </UserControl>

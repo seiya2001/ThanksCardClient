@@ -12,8 +12,8 @@
 
 
         <StackPanel  Orientation="Horizontal" Grid.ColumnSpan="2">
-            <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="0,182,0,0" />
-            <Button Content="マニュアル" Margin="200,182,20,0"  Command="{Binding ShowManualCommand}"/>
+            <Button Content="ログアウト" Command="{Binding LogoffCommand}" Margin="0,182,0,0"  Background="Silver"/>
+            <Button Content="マニュアル" Margin="200,182,20,0"  Command="{Binding ShowManualCommand}"  Background="Silver"/>
         </StackPanel>
 
     </Grid>
