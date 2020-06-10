@@ -19,7 +19,8 @@
                 <Image Source="/ManualPNG/システムマニュアル文-12.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-13.png" />
                 <Image Source="/ManualPNG/システムマニュアル文-14.png" />
-            </StackPanel>
+            <Button Content="メインメニュー" Command="{Binding ShowMainMenuCommand}"  Margin="0,10,0,0"/>
+        </StackPanel>
 
 
         </Grid>
