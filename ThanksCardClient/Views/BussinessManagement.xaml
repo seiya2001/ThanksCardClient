@@ -3,11 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"          
              xmlns:local="clr-namespace:ThanksCardClient"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid Margin="0,50,0,0">
         <StackPanel>
             <TextBlock Text="経営管理画面ログインページ" FontSize="25" Margin="0,-35,0,34.8" />
-            <PasswordBox local:PasswordBoxHelper.Password="{Binding BusinessPassword.Password}" PasswordChar="●" Width="300" Height="25" Margin="0,200,0,0"/>
+            <PasswordBox local:PasswordBoxHelper.Password="{Binding BusinessPassword.Password}" PasswordChar="●" Width="300" Height="25" Margin="0,200,0,0" mah:TextBoxHelper.Watermark="経営管理画面専用パスワードを入力してください" mah:TextBoxHelper.ClearTextButton="True"/>
             <Button Content="ログイン" Command="{Binding BusinessLogonCommand}" Width="120" Margin="0,50,0,0"  Background="Silver"/>
         </StackPanel>
     </Grid>
