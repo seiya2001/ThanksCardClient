@@ -8,8 +8,8 @@
             <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False" >
                 <DataGrid.Columns >
                     
-                    <DataGridTextColumn Header="From" Binding="{Binding From.Name}" />
-                    <DataGridTextColumn Header="To" Binding="{Binding To.Name}" />
+                    <DataGridTextColumn Header="From" Binding="{Binding From.JapaneseName}" />
+                    <DataGridTextColumn Header="To" Binding="{Binding To.JapaneseName}" />
                     <DataGridTextColumn Header="タイトル" Binding="{Binding Title}" />
                     <DataGridTextColumn Header="作成日時" Binding="{Binding CreatedDateTime}"  SortDirection="Descending"/>
                     <DataGridTemplateColumn IsReadOnly="True" Header="カテゴリ">
