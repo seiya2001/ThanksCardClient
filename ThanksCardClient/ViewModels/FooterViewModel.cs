@@ -4,6 +4,7 @@ using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using ThanksCardClient.Models;
 using ThanksCardClient.Services;
 
@@ -139,7 +140,12 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.Regions["HeaderRegion"].RemoveAll();
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Logon));
             this.regionManager.Regions["FooterRegion"].RemoveAll();
-            System.Windows.MessageBox.Show("ログアウトしました。");
+            const string message =
+          "ログアウトしました";
+            const string caption = "お知らせ";
+            var result = System.Windows.Forms.MessageBox.Show(message, caption,
+                                         MessageBoxButtons.OK,
+                                         MessageBoxIcon.Information);
 
         }
         #endregion
