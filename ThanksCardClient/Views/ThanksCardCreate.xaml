@@ -7,7 +7,7 @@
         <StackPanel Width="500">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="部署:"/>
-                <ComboBox x:Name="FromDepartments" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValuePath="Id">
+                <ComboBox x:Name="FromDepartments" ItemsSource="{Binding Departments}" DisplayMemberPath="JapaneseName" SelectedValuePath="Id">
                     <!-- Deparment が選択されたら FromDepartmentsChangedCommand を発行する -->
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="SelectionChanged">
@@ -16,7 +16,7 @@
                     </i:Interaction.Triggers>
                 </ComboBox>
                 <TextBlock Text="From:"/>
-                <ComboBox ItemsSource="{Binding FromUsers}" DisplayMemberPath="Name" SelectedValue="{Binding ThanksCard.FromId}" SelectedValuePath="Id"/>
+                <ComboBox ItemsSource="{Binding FromUsers}" DisplayMemberPath="JapaneseName" SelectedValue="{Binding ThanksCard.FromId}" SelectedValuePath="Id"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="部署:"/>

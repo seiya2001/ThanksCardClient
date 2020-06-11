@@ -4,6 +4,6 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <TextBlock Text="{Binding AuthorizedUser.Name, StringFormat=ログオン中のユーザ: {0} }" HorizontalAlignment="Right"/>
+        <TextBlock Text="{Binding AuthorizedUser.JapaneseName, StringFormat=ログオン中のユーザ: {0} }" HorizontalAlignment="Right"/>
     </Grid>
 </UserControl>
