@@ -95,15 +95,30 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+       
+
+
+        #region ShowMainMenuCommand
+        private DelegateCommand _ShowTanksCardListCommand;
+        public DelegateCommand ShowMainMenuCommand =>
+            _ShowTanksCardListCommand ?? (_ShowTanksCardListCommand = new DelegateCommand(ExecuteShowTanksCardListCommand));
+
+        void ExecuteShowTanksCardListCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ThanksCardList));
+        }
+        #endregion
+
+
         #region ShowThanksCardListCommand
-        private DelegateCommand _ShowThanksCardList;
+        private DelegateCommand _ShowThanksCardListCommand;
 
 
-        public DelegateCommand ShowThanksCardList =>
-            _ShowThanksCardList ?? (_ShowThanksCardList = new DelegateCommand(ExecuteShowThanksCardList));
+        public DelegateCommand ShowThanksCardListCommand =>
+            _ShowThanksCardListCommand ?? (_ShowThanksCardListCommand = new DelegateCommand(ExecuteShowThanksCardListCommand));
 
 
-        void ExecuteShowThanksCardList()
+        void ExecuteShowThanksCardListCommand()
         {
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ThanksCardList));
         }
